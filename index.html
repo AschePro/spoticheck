@@ -1,7 +1,7 @@
 <html>
 <body>
 <h1> Spotify Account Gen - Asche</h1>
-<div> <?php
+<?php
 # HEADER
 header("Content-Type: text/plain");
 
@@ -58,6 +58,6 @@ if ($check == "error") {
     $login_token = getstr($resp, 'login_token":"', '"');
     echo "Status: Success\nUsername: $username\nLogin Token: $login_token\nEmail: $email\nPassword: $password\n";
 }
-?> </div>
+?>
 </body>
 </html>
